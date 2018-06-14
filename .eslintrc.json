@@ -1,0 +1,17 @@
+{
+    "extends": "airbnb-base",
+    "rules": {
+        "indent": ["warn", 4],
+        "function-paren-newline": "off"
+    },
+
+    "overrides": [{
+        "files": ["src/**/*.test.js"],
+        "rules": {
+            "import/no-extraneous-dependencies": "off"
+        },
+        "env": {
+            "jest": true
+        }
+    }]
+}
