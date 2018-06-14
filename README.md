@@ -32,7 +32,7 @@ That's it! No more invariant messages cluttering production code.
 Since invariant implementation is pretty small, maybe you wish to implement it yourself instead of relying on one more dependency. For that use case, you can customize how this plugin works:
 
 #### Pragma
-You can use a function with a name different from `invariant`.
+You can use a function name other than `invariant`.
 ```json
 {
     "env": {
@@ -76,9 +76,9 @@ invariant(essentialArg, anotherEssentialArg, minifyAway, thisToo);
 invariant(essentialArg, anotherEssentialArg);
 ```
 
-You can mix both options!
+You can mix both options too!
 
-That's it! If you've liked this, consider giving it a star!
+That's it! If you've liked this, consider giving it a star :star:!
 
 ### Copyright & License
 
