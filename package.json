@@ -1,0 +1,48 @@
+{
+  "name": "babel-plugin-strip-invariant",
+  "version": "0.0.1",
+  "description": "Babel plugin to remove invariant arguments not needed during production builds.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rimraf dist && cross-env NODE_ENV=production webpack --mode=production",
+    "coverage": "cross-env NODE_ENV=test jest --coverage --coverageReporters=text-lcov | coveralls",
+    "lint": "eslint src/** ",
+    "prebuild": "npm run test && npm run lint",
+    "prepublishOnly": "npm run build",
+    "test": "cross-env NODE_ENV=test jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/husscode/babel-plugin-strip-invariant.git"
+  },
+  "keywords": [
+    "babel",
+    "plugin",
+    "invariant",
+    "production",
+    "remove",
+    "messages"
+  ],
+  "author": "Marcel Coelho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/husscode/babel-plugin-strip-invariant/issues"
+  },
+  "homepage": "https://github.com/husscode/babel-plugin-strip-invariant#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.0.1",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "coveralls": "^3.0.1",
+    "cross-env": "^5.2.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "jest": "^23.1.0",
+    "rimraf": "^2.6.2",
+    "webpack": "^4.12.0",
+    "webpack-command": "^0.2.1"
+  },
+  "dependencies": {}
+}
