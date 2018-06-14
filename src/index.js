@@ -10,7 +10,7 @@ const DEFAULT_ARG_COUNT = 1;
  * @param  {String} pragma   Identifier of the function to target.
  * @return {Object} The argCount and pragma to be used.
  */
-export function getOptions(options = {}) {
+export function getOptions(options) {
     const { argCount, pragma } = options;
 
     if (exists(argCount)) {
